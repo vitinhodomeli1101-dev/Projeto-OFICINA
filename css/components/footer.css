@@ -1,0 +1,7 @@
+footer {
+    padding: var(--space-md);
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+  }
+  
