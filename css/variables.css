@@ -1,97 +1,34 @@
-/css/variables.cs8 UNICA fonte da verdade para o projeto */
+:root {
+  --color-primary-500: #2E75B6;
+  --color-primary-700: #1E4F7A;
+  --color-secondary-500: #f97316;
+  --color-secondary-700: #c2410c;
 
-:root (
+  --color-white: #ffffff;
+  --color-gray-100: #f4f4f4;
+  --color-gray-300: #d1d5db;
+  --color-gray-600: #4b5563;
+  --color-gray-900: #111827;
 
-/* Tipografia /
+  --font-primary: 'Inter', Arial, sans-serif;
+  --font-heading: 'Poppins', sans-serif;
 
---font-heading: "Poppins", system-ui, sans-serif;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
 
---font-body: "Inter",
+  --fs-base: clamp(0.875rem, 2vw, 1rem);
+  --fs-h1: clamp(1.75rem, 4vw, 2.5rem);
+  --fs-h2: clamp(1.25rem, 3vw, 1.875rem);
 
-system-ui, sans-serif;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
 
---font-xs: 0.640rem;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.18);
 
---font-sm: 0.800rem;
-
---font-base: 1.000rem;
-
---font-md: 1.250rem:
-
---font-1g: 1.563rem;
-
---font-xl:
-
-1.953rem;
-
---font-2x1: 2.441rem; --weight-regular: 400;
-
---weight-medium: 500;
-
---weight-bold: 700:
-
---leading-right: 1.2;
-
---leading-normal: 1.5;
-
-/ Coren/
-
---color-primary-100: #EBF3FB:
-
---color-primary-500: #287586;
-
---color-primary-700: #1F4E79; --color-gray-50: #F9FAFB;
-
---color-gray-300: #D1D5DB;
-
---color-gray-500: #687280;
-
---color-gray-700: #374151;
-
---color-gray-900: #111827; --color-success: #107041;
-
---color-warning: #FF8C00;
-
---color-danger:
-
-/* Aliases semánticos /
-
---color-text-primary: var (--color-gray-900);
-
---color-text-secondary: var (--color-gray-500);
-
---color-bg-primary:
-
---color-bg-secondary: var(--color-gray-50);
-
-var (--color-gray-3001;
-
---color-border:
-
-/ Espaçamento (escala 4px) /
-
---space-1: 0.25rom: --space-2: 0.50rem;
-
-/ 4px/
-
---space-4: 1.00rem:
-
-/ 8px */16px /
-
---space-6: 1.50rem:
-
-24px */32px /
-
---space-8: 2.00rem: --space-12: 3.00rem:
-
-48px /--space-16: 4.00rem: 64px/
-
-/ Bordas/
-
---radius-sm: 4px;
-
---radius-md: 8px;
-
---radius-lg: 12px;
-
---radius-full: 9999px; / pill/badge arredondado /
+  --transition: 0.3s ease;
+}

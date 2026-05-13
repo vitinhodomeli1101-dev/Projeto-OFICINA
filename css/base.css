@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-900);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+video,
+iframe {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
