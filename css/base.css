@@ -1,5 +1,6 @@
 body {
   margin: 0;
+
   font-family: Arial, sans-serif;
   font-size: var(--fs-base);
   line-height: 1.6;
@@ -7,16 +8,6 @@ body {
   color: var(--cor-texto);
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-sm);
-  padding: var(--space-sm);
-  background-color: var(--cor-principal);
-  color: white;
-  text-align: center;
-}
 
 h1 {
   font-size: var(--fs-h1);
@@ -30,7 +21,7 @@ h2 {
 
 
 nav a {
-  color: white;
+  color: var(--color-white)
   text-decoration: none;
   font-weight: bold;
   padding: 0.75rem;
@@ -40,7 +31,7 @@ nav a {
 nav a:hover,
 nav a:focus {
   background-color: #c2410c;
-  outline: 3px solid white;
+  outline: 3px solid var(--color-white);
 }
 
 main {
@@ -72,18 +63,35 @@ table {
 
 th,
 td {
-  border: 1px solid #ccc;
+  border:  --space-sm solid var(--color-white);
   padding: 0.75rem;
   text-align: left;
 }
 
 th {
-  background-color: var(--cor-principal);
-  color: white;
+  background-color: var( --color-gray-900);
+  color: var(--color-white);
 }
 
 tr:nth-child(even) {
-  background-color: #f9fafb;
+  background-color:var(--color-white);
+
+  font-family: var(--font-primary);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-900);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+a {
+  text-decoration: none;
+
 }
 
 img,
@@ -93,6 +101,7 @@ iframe {
   max-width: 100%;
   height: auto;
   display: block;
+ HEAD
 }
 
 input,
@@ -132,4 +141,5 @@ textarea {
   section {
     padding: var(--space-lg);
   }
+
 }

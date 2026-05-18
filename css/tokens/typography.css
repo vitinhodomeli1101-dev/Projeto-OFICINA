@@ -1,0 +1,24 @@
+:root {
+    /* 
+  Design Tokens
+  Convenção adotada:
+  - Tokens primitivos: representam valores base do design (cores brutas, espaçamentos, tamanhos, etc.).
+    Ex.: --space-sm, --fs-base, --color-gray-300
+  - Tokens semânticos: representam o propósito de uso na interface.
+    Ex.: --color-primary-500, --color-secondary-500
+
+  Organização:
+  - semantic.css   → cores e significados visuais do sistema
+  - spacing.css    → espaçamentos e dimensões
+  - typography.css → fontes e tamanhos tipográficos
+*/
+
+  /* Fonts */
+  --font-primary: 'Inter', Arial, sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+
+  /* Font sizes */
+  --fs-base: clamp(0.875rem, 2vw, 1rem);
+  --fs-h1: clamp(1.75rem, 4vw, 2.5rem);
+  --fs-h2: clamp(1.25rem, 3vw, 1.875rem);
+}

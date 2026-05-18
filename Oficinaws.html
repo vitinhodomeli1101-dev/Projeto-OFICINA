@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oficina Mecânica WS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/utilities.css">
+
+  <link rel="stylesheet" href="css/components/navbar.css">
+  <link rel="stylesheet" href="css/components/card.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/components/btn.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header__content">
+    <div>
+      <h1 class="header__title">Oficina WS</h1>
+      <p class="header__subtitle">Qualidade e confiança no conserto do seu veículo</p>
+    </div>
+
+    <button 
+      class="navbar__toggle" 
+      type="button" 
+      aria-label="Abrir menu"
+      aria-controls="menu-principal"
+      aria-expanded="false">
+      ☰
+    </button>
+  </div>
+
+  <nav class="navbar" aria-label="Menu principal">
+    <ul class="navbar__menu" id="menu-principal">
+      <li><a class="navbar__link" href="#">Início</a></li>
+      <li><a class="navbar__link" href="#servicos">Serviços</a></li>
+      <li><a class="navbar__link" href="#horario">Horários</a></li>
+      <li><a class="navbar__link" href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main">
+
+  <section class="section">
+    <h2 class="section__title">Sobre a Oficina</h2>
+    <p>
+      Nossa oficina oferece serviços de manutenção preventiva, troca de óleo,
+      revisão completa, alinhamento, balanceamento e reparos mecânicos em geral.
+      Trabalhamos com profissionais qualificados para garantir segurança,
+      qualidade e satisfação aos nossos clientes.
+    </p>
+  </section>
+
+  <section class="section" id="servicos">
+    <h2 class="section__title">Serviços da Oficina</h2>
+
+    <div class="cards-grid">
+      <article class="card card--featured">
+        <h3 class="card__title">Revisão Completa</h3>
+        <p class="card__text">
+          Avaliação completa do veículo, incluindo motor, freios, suspensão e sistema elétrico.
+        </p>
+        <a href="#" class="btn btn--primary">Agendar serviço</a>
+      </article>
+
+      <article class="card">
+        <h3 class="card__title">Troca de Óleo</h3>
+        <p class="card__text">
+          Substituição do óleo do motor e verificação dos principais filtros do veículo.
+        </p>
+        <a href="#" class="btn btn--outline">Ver detalhes</a>
+      </article>
+
+      <article class="card">
+        <h3 class="card__title">Alinhamento</h3>
+        <p class="card__text">
+          Ajuste da direção para melhorar a estabilidade, segurança e durabilidade dos pneus.
+        </p>
+        <a href="#" class="btn btn--outline">Ver detalhes</a>
+      </article>
+
+      <article class="card">
+        <h3 class="card__title">Balanceamento</h3>
+        <p class="card__text">
+          Correção do equilíbrio das rodas para evitar vibrações e desgaste irregular.
+        </p>
+        <a href="#" class="btn btn--ghost">Ver detalhes</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="horario">
+    <h2 class="section__title">Horário de Funcionamento</h2>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Dia</th>
+          <th>Horário</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Segunda-feira</td>
+          <td>08:00 às 18:00</td>
+        </tr>
+        <tr>
+          <td>Terça-feira</td>
+          <td>08:00 às 18:00</td>
+        </tr>
+        <tr>
+          <td>Quarta-feira</td>
+          <td>08:00 às 18:00</td>
+        </tr>
+        <tr>
+          <td>Quinta-feira</td>
+          <td>08:00 às 18:00</td>
+        </tr>
+        <tr>
+          <td>Sexta-feira</td>
+          <td>08:00 às 18:00</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer class="footer" id="contato">
+  <div class="footer__grid">
+    <div class="footer__column">
+      <h3 class="footer__title">Oficina WS</h3>
+      <p class="footer__text">
+        Qualidade, segurança e confiança no cuidado com o seu veículo.
+      </p>
+    </div>
+
+    <div class="footer__column">
+      <h3 class="footer__title">Navegação</h3>
+      <a href="#" class="footer__link">Início</a>
+      <a href="#servicos" class="footer__link">Serviços</a>
+      <a href="#horario" class="footer__link">Horários</a>
+    </div>
+
+    <div class="footer__column">
+      <h3 class="footer__title">Contato</h3>
+      <p class="footer__text">Telefone: (83) 98647-3704</p>
+      <p class="footer__text">E-mail: contato@oficinaws.com</p>
+    </div>
+  </div>
+
+  <p class="footer__copy">
+    &copy; <span id="year"></span> Oficina WS. Todos os direitos reservados.
+  </p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

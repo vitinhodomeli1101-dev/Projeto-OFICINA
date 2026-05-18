@@ -6,25 +6,27 @@
 <title>Oficina Mecânica</title>
 
 <link href="css/base.css" type="text/css" rel="stylesheet">
-<link rel="stylesheet" href="css/components/nav.css">
+<link rel="stylesheet" href="css/components/navbar.css">
 <link rel="stylesheet" href="css/components/hero.css">
 <link rel="stylesheet" href="css/components/footer.css">
-<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/tokens/semantic.css">
+<link rel="stylesheet" href="css/tokens/spacing.css">
+<link rel="stylesheet" href="css/tokens/typography.css">
 <link rel="stylesheet" href="css/reset.css">
 
 </head>
 
 <body>
 
-<header>
+<header class="header">
     <h1>Oficina Mecânica Rápida</h1>
     <p>Qualidade e confiança no concerto do seu veículo</p>
 </header>
 
-<nav id="nav">
-    <a href="index.html">Início</a>
-    <a href="clientes.html">Clientes</a>
-    <a href="veiculos.html">Veículos</a>
+<nav class="navbar">
+    <a class="navbar__link" href="index.html">Início</a>
+    <a class="navbar__link" href="clientes.html">Clientes</a>
+    <a class="navbar__link" href="veiculos.html">Veículos</a>
 </nav>
 
 <main>
@@ -78,7 +80,7 @@
 </main>
 
 <footer id="footer">
-    <p>&copy; 2026 Oficina Mecânica Rápida</p>
+    <p class="footer__title">&copy; 2026 Oficina Mecânica Rápida</p>
 </footer>
 
 </body>
